@@ -1,0 +1,9 @@
+build
+dist
+public
+src/assets
+mock
+*.tsx
+*.ts
+*.jsx
+*.js

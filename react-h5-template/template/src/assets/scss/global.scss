@@ -1,0 +1,94 @@
+html,
+* {
+  font-family: 'Arial', 'Microsoft YaHei', '黑体', '宋体', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+// flex布局
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex-column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-column-space-around {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.flex-space-between {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flex-space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex-no-align {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.flex-column-no-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-container {
+  padding-bottom: 50px;
+}
+
+// 居中
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// avatar
+.avatar-small {
+  display: flex;
+  align-items: center;
+  background-color: rgb(85, 85, 85);
+  border-radius: 50%;
+  height: 2.5rem;
+  justify-content: center;
+  width: 2.5rem;
+  img {
+    width: 80%;
+    height: 80%;
+  }
+}
+
+.box-one {
+  width: 33.3333vw;
+  height: 33.3333vw;
+  background-color: pink;
+  text-align: center;
+}
+
+.icon-small {
+  width: 20px;
+  height: 20px;
+}
