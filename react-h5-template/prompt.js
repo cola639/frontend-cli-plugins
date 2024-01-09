@@ -1,19 +1,14 @@
 module.exports = {
     prompts: [
-        // {
-        //     name: "ui",
-        //     message: "UI framework:",
-        //     type: "select",
-        //     pageSize: 3,
-        //     choices: [
-        //         { message: "None", name: "none" },
-        //         { message: "Tailwind CSS", name: "tailwind" },
-        //         { message: "Bootstrap", name: "bootstrap" },
-        //         { message: "Chakra UI", name: "chakra-ui" },
-        //         { message: "Antd", name: "antd" },
-        //     ],
-        //     default: "none",
-        // },
+        {
+            name: "react h5 template",
+            message: "react h5 template:",
+            type: "select",
+            choices: [
+                { message: "None", name: "none" },
+            ],
+            default: "none",
+        },
         // {
         //     name: "css_features",
         //     message: "CSS Preprocessor:",
