@@ -1,45 +1,52 @@
-# <%= name %>
-<% const docsUrl = "https://github.com/pankod/superplate"; %>
+# React H5 Template
 
-This project was generated with [superplate](<%- docsUrl %>).
+## Project setup
 
-## Getting Started
-
-superplate is a Next.js all-in-one project generator. Create your project with the tools you need without spending hours on setting them up.
-
-## Available Scripts
-
-### Running the development server.
-
-```bash
-    <%= pmRun %> dev
+```
+npm install
 ```
 
-### Building for production.
+### Compiles and hot-reloads for development
 
-```bash
-    <%= pmRun %> build
+```
+npm run dev
 ```
 
-### Running the production server.
+### Compiles and minifies for production
 
-```bash
-    <%= pmRun %> start
+```
+npm run build
 ```
 
-## Learn More
+### 功能
 
-To learn more about **superplate**, please check out the [Documentation](<%- docsUrl %>).
+- [√ 配置多环境变量](#env)
+- [√ vw 适配方案](#rem)
+- [√ Sass 全局样式](#sass)
+- [√ Axios 封装及接口管理](#axios)
+- [√ Webpack 5 craco.config.js 基础配置](#base)
+- [√ 配置 alias 别名](#alias)
+- [√ 配置 proxy 跨域](#proxy)
+- [√ 配置 打包分析](#bundle)
+- [√ 生产环境去掉 console.log ](#console)
+- [√ splitChunks 单独打包第三方模块](#chunks)
+- [√ Eslint+Pettier 统一开发规范 ](#pettier)
+- [√ 定制化主题 Ant Mobile UI ](#ant-mobile)
+- [√ Layout 布局 ](#layout)
 
-<% for (var i = 0; i < pluginsData.length; i++ ) { %>
-### **<%= pluginsData[i].name %>**
+### Coming soon
 
-<%= pluginsData[i].description %>
+- [√ 时间格式化工具](#momentjs)
 
-[Go To Documentation](<%- pluginsData[i].url %>)
+### 目录说明
 
-<% } %>
+### H5 适配说明
 
-## License
+```
+    package-lock.json 限定 package.json 子依赖关系
+```
 
-MIT
+```
+    使用375px设计稿为准
+    搭配 vscode extension px to rem 转换px为vw单位
+```
