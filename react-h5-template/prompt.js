@@ -1,14 +1,14 @@
 module.exports = {
     prompts: [
-        {
-            name: "react h5 template",
-            message: "react h5 template:",
-            type: "select",
-            choices: [
-                { message: "None", name: "none" },
-            ],
-            default: "none",
-        },
+        // {
+        //     name: "react h5 template",
+        //     message: "react h5 template:",
+        //     type: "select",
+        //     choices: [
+        //         { message: "None", name: "none" },
+        //     ],
+        //     default: "none",
+        // },
         // {
         //     name: "css_features",
         //     message: "CSS Preprocessor:",

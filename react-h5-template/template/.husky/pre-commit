@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+cd "$(dirname "$0")/.."
+. "$(dirname "$0")/_/husky.sh"
+
+node ./.husky/pre-commit.js $1

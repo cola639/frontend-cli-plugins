@@ -1,0 +1,97 @@
+{
+  "React Basic Template": {
+    "prefix": "react18",
+    "description": "react function template",
+    "body": [
+      "import { FC, useState, useEffect } from 'react'",
+      "import styled from 'styled-components'",
+      "",
+      "// ui lib",
+      "",
+      "// components",
+      "",
+      "// hooks",
+      "",
+      "// options",
+      "",
+      "// ==============================|| ${TM_FILENAME_BASE} ||============================== //",
+      "interface I${TM_FILENAME_BASE} {}",
+      "",
+      "const ${TM_FILENAME_BASE}: FC<I${TM_FILENAME_BASE}> = () => {",
+      "  const [name, setName] = useState('${TM_FILENAME_BASE}')",
+      "",
+      "  useEffect(() => {",
+      "    return () => {}",
+      "  }, [])",
+      "",
+      "  const handleClick = () => {",
+      "    setName('${TM_FILENAME_BASE}2')",
+      "  }",
+      "",
+      "  return <Wrap onClick={handleClick}>{name}</Wrap>",
+      "}",
+      "",
+      "const Wrap = styled.div`",
+      "  width: 26.6667vw;",
+      "  height: 26.6667vw;",
+      "  background-color: pink;",
+      "`",
+      "",
+      "export default ${TM_FILENAME_BASE}"
+    ]
+  },
+  "React async function template": {
+    "prefix": "tcf",
+    "body": [
+      "asyncFun().then((res) => {console.log(res)})",
+      ".catch((err) => {console.log(err)})",
+      ".finally(()=>{})"
+    ],
+    "description": "Async chain operation "
+  },
+  "Print to postTryCatch": {
+    "prefix": "tcfPost",
+    "body": [
+      "try {",
+      "  const res = await fun1()",
+      "  console.log(' 🚀 res >> ',res)",
+      "  Toast.show({ icon: 'success',content: '提交成功',})",
+      "} catch (error) {",
+      "  console.error('error',error)",
+      "  Toast.show({  icon: 'fail',content: '提交失败',})",
+      "} finally {",
+      "}"
+    ],
+    "description": "Async function with try-catch-finally block"
+  },
+  "useState Hook": {
+    "prefix": "usestate",
+    "body": ["const [${1:state}, set${1/(.*)/${1:/pascalcase}/}] = useState($0);"],
+    "description": "Inserts a useState hook."
+  },
+  "useEffect Hook": {
+    "prefix": "useeffect",
+    "body": ["useEffect(() => {", "  ", "  return () => {}", "}, [])"],
+    "description": "React useEffect template"
+  },
+  "useMemo Hook": {
+    "prefix": "usememo",
+    "body": ["const needRender = useMemo(() => { excuteLogic }, [detectiveArray])"],
+    "description": "Log output to react useMemo template"
+  },
+  "useCallback Hook": {
+    "prefix": "usecallback",
+    "body": ["const handleFunction = useCallback(() => { excuteLogic }, [detectiveArray])"],
+    "description": "Log output to react useCallback template"
+  },
+  "React handleEvent template": {
+    "prefix": "handleEvent",
+    "body": ["const handle${1:name} = () => {}"],
+    "description": "Log output to react useCallback template"
+  },
+  "import svg template": {
+    "prefix": "import svg",
+    "body": ["import { ReactComponent as NameIcon } from '@/assets/icons/name.svg'"],
+    "description": "Log output to import svg template"
+  }
+}
